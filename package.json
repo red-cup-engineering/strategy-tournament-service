@@ -1,0 +1,30 @@
+{
+  "name": "@red-cup-engineering/strategy-tournament-service",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Runs a deterministic strategy tournament over one daily OHLCV series: builds baseline and external target-weight entries, replays each over purged walk-forward train/validation/holdout segments through the house transaction-cost replay, selects on validation-only evidence, and reports untouched holdout for every entry.",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/strategy-tournament.mjs"
+  },
+  "files": [
+    "src/",
+    "scripts/"
+  ],
+  "bin": {
+    "run-strategy-tournament": "./scripts/run-strategy-tournament.mjs"
+  },
+  "scripts": {
+    "run": "node scripts/run-strategy-tournament.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@red-cup-engineering/alpaca-services-section": "workspace:*",
+    "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*",
+    "@red-cup-engineering/model-tournament-service": "workspace:*",
+    "@red-cup-engineering/purged-walk-forward-fold-service": "workspace:*",
+    "@red-cup-engineering/transaction-cost-replay-service": "workspace:*",
+    "@red-cup-engineering/computer-content-address-engineering-services-section": "workspace:*"
+  }
+}

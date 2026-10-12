@@ -1,0 +1,9 @@
+{
+  "sourceUrl": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=365&interval=daily",
+  "originallyFetchedAt": "2026-09-01T04:44:00Z",
+  "reusedFrom": "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/web-services-section/services/web-platform-services-section/services/web2-platform-services-section/services/web2-financial-platform-services-section/services/web2-financial-brokerage-platform-services-section/services/alpaca-services-section/services/signal-fusion-alpha-engine-service/test/fixtures/btc-365d-coingecko.json",
+  "reusedBecause": "Stooq's free CSV endpoint (https://stooq.com/q/d/l/?s=spy.us&i=d) now serves an anti-bot JavaScript proof-of-work challenge page instead of CSV data; curl (plain and with a browser User-Agent) received HTTP 200 with an HTML page requiring a client-side SHA-256 proof-of-work it cannot execute, not the SPY series. This is the largest real recorded daily series already on disk under alpaca-services-section; no CSV/JSON bar fixtures were found there before this one.",
+  "sha256": "73bdc2fe2de4c7401c5be1ca772f28826081f62a296065588ca28210e7c3038f",
+  "rows": 365,
+  "note": "Real recorded coingecko daily price/volume series for BTC/USD, not OHLC-bucketed. o/h/l/c are all set to the day's single recorded price (a degenerate real-price OHLC bar, not a synthesized price) by the test that loads this fixture; volume is the recorded USD volume."
+}
