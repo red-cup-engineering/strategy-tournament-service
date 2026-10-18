@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "type": "module",
   "description": "Runs a deterministic strategy tournament over one daily OHLCV series: builds baseline and external target-weight entries, replays each over purged walk-forward train/validation/holdout segments through the house transaction-cost replay, selects on validation-only evidence, and reports untouched holdout for every entry.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/financial-engineering-services-section.git",
+    "directory": "services/strategy-evaluation-services-section/services/strategy-tournament-service"
+  },
   "license": "MIT",
   "exports": {
     ".": "./src/strategy-tournament.mjs"
