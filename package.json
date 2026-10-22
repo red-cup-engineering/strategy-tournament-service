@@ -30,5 +30,9 @@
     "@red-cup-engineering/purged-walk-forward-fold-service": "workspace:*",
     "@red-cup-engineering/transaction-cost-replay-service": "workspace:*",
     "@red-cup-engineering/computer-content-address-engineering-services-section": "workspace:*"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
   }
 }
