@@ -23,9 +23,9 @@
     "test": "node --test test/*.test.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/alpaca-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/alpaca-services-section": "workspace:*",
     "@red-cup-engineering/computer-code-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/javascript-node-engineering-services-section": "workspace:*",
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*",
     "@red-cup-engineering/model-tournament-service": "workspace:*",
     "@red-cup-engineering/purged-walk-forward-fold-service": "workspace:*",
     "@red-cup-engineering/transaction-cost-replay-service": "workspace:*",
